@@ -1092,6 +1092,9 @@ input[name=search-box]{
         display: block;
     
     }
+    .drop-down a:hover{
+        color: #4d8463;
+    }
     .full-back{
         display: block;
         background-color: rgba(0,0,0,0.64);

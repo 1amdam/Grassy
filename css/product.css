@@ -99,12 +99,15 @@ header.active{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    /* display: none; */
 }
 .shop-thum{
     width: 45%;
     /* border: 1px solid blue; */
     margin-bottom: 30px;
+    display: none;
 }
+
 .no-item{
     width: 100%;
     text-align: center;

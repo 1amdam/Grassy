@@ -107,10 +107,13 @@ input[name=login-id]{
     margin: 10px auto;
     text-align: center;
     padding: 20px 0;
+    font-family: 'Pretendard';
+    
 }
 .login-link a{
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     font-weight: 600;
+    padding: 0 5px;
 }
 .sns-login{
     display: flex;
@@ -132,11 +135,11 @@ input[name=login-id]{
 }
 .naver{
     background: #232121 url(../images/naver.jpg) center no-repeat;
-    background-size: contain;
+    background-size: 100%;
 }
 .kakao{
     background: #232121 url(../images/kakao.jpg) center no-repeat;
-    background-size: contain;
+    background-size: 100%;
 }
 .non-member{
     width: 100%;
@@ -148,6 +151,7 @@ input[name=login-id]{
     font-size: 1.5rem;
     text-align: center;
     padding-top: 20px;
+    font-family: 'Pretendard';
     /* border: 1px solid black; */
 }
 .nonmem{
