@@ -99,6 +99,15 @@ $(document).ready(function(){
         $(this.hash).show().css({"display":"block"});
         return false;
     })
+    $(".d-best-item").eq(0).css({"display":"block"})
+    $(".m-tab a").eq(0).addClass("active");
+    $(".m-tab a").click(function(){
+        $(".m-tab a").removeClass("active");
+        $(this).addClass("active")
+        $(".d-best-item").hide();
+        $(this.hash).show().css({"display":"block"});
+        return false;
+    })
 })
 
 

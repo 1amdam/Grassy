@@ -804,6 +804,9 @@ input[name=search-box]{
         .question{
             display: block;
         }
+        .detail-thum{
+            padding: 0 70px;
+        }
     }
 @media screen and (min-width:850px){
     .btn-gr{
@@ -1022,6 +1025,9 @@ input[name=search-box]{
     }
     .new-lip h3{
         display: none;
+    }
+    .detail-thum{
+        padding: 0 90px;
     }
 }
 @media screen and (min-width:1280px){

@@ -75,6 +75,10 @@ header.active{
     font-weight: 600;
     transition: 0.3s;
 }
+.shop-menu a:nth-child(3){
+    color: #4d8463;
+    border-bottom: 1px solid #4d8463;
+}
 
 .shop-menu a:hover{
     color: #4d8463;

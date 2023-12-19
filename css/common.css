@@ -1350,7 +1350,7 @@ input[name=search-box]{
         /* border-radius: 10px; */
         overflow: hidden;
         margin-top: 40px;
-        /* display: none; */
+        display: none;
         
     }
     .d-item-pic{
