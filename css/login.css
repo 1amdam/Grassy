@@ -74,6 +74,7 @@ input[name=login-psw]{
     padding-left: 20px;
     outline: none;
     margin-left: 50px;
+    font-family: 'Pretendard';
 }
 input[name=login-id]{
     margin-left: 130px;
