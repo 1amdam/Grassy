@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keyword" content="">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta property="og:type" content="html">
+        <meta property="og:title" content="Grassy">
+        <meta property="og:description" content="자연의 향 그대로, Grassy">
+        <meta property="og:image" content="./images/miribogi.png">
+        <meta property="og:url" content="http://damhye11.dothome.co.kr/Grassy/">
+        <title>Grassy</title>
+        <link rel="shortcut icon" href="./images/fav.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./css/common.css">
+        <script src="./js/jquery-3.7.1.min.js"></script>
+        <script src="./js/common.js"></script>
+        <script src="./js/scroll.js"></script>
+
+        <style>
+          .swiper {
+            width: 100%;
+            height: 100%;
+            }
+
+            .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            }
+
+            .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            }
+          
+            .best-item .swiper-slide img{
+                width: 94%;
+                max-width: 500px;
+                /* border: 1px solid black; */
+                margin: auto;
+            }
+            @media screen and (min-width:744px){
+                .best-item .swiper-slide img {
+                width: 80%;
+                max-width: 900px;
+                margin: auto;
+
+            }
+        }
+            .swiper-button-next, .swiper-button-prev{
+                color:  #4d8463;
+                /* border: 1px solid black; */
+                margin-top: 15px;
+                display: none;
+            }
+            .swiper-pagination-bullet{
+                background-color: #4d8463;
+            }
+        </style>
+    </head>
+   
+
+    <body>
+        <main>
+        <div class="header-position">
+            <header>
+                <div id="header-container">
+                    <h1>
+                        <a href="index.html">
+                            <img src="./images/logo-1.png" alt="Grassy Logo">
+                        </a>
+                    </h1>
+                    <div class="full-back"></div>
+                    <nav id="desk-nav">
+                        <div class="d-menu">
+                            <a href="shop.html">SHOP</a>
+                            <div class="drop-down">
+                                <a href="lip.html">LIP</a>
+                                <a href="eye.html">EYE</a>
+                                <a href="face.html">FACE</a>
+                                <a href="body.html">BODY</a>
+                            </div>
+                            
+                        </div>
+                        <div class="d-menu">
+                            <a href="#" class="prepare">GRASSY!<span class="on">preparing!</span></a>
+                            <div class="drop-down">
+                                <a href="#">ABOUT</a>
+                                <a href="#">STORE</a>
+                                <a href="#">GOODS</a>
+                            </div>
+                            
+                        </div>
+                        <div class="d-menu">
+                            <a href="#" class="prepare">MEMBERSHIP<span class="on">preparing!</span></a>
+                            <div class="drop-down">
+                                <a href="#">EVENT</a>
+                                <a href="#">MEMBERSHIP</a>
+                            </div>
+                            
+                        </div>
+                        <div class="d-menu">
+                            <a href="#" class="prepare">COMMUNITY<span class="on">preparing!</span></a>
+                            <div class="drop-down">
+                                <a href="#">NOTICE</a>
+                                <a href="#">Q&A</a>
+                                <a href="#">FAQ</a>
+                            </div>
+                            
+                        </div>
+                        <div class="d-menu">
+                            <a href="#" class="prepare">DAY ROUTINE<span class="on">preparing!</span></a>
+                        </div>
+                        
+                    </nav>
+                    <!-- <div id="login-gr">
+                        <a href="#">
+                            <img src="./images/login-icon.png">
+                        </a>
+                        <a href="#">
+                            <img src="./images/basket-icon.png">
+                        </a>
+                    </div> -->
+                    <!-- 로그인, 카트, 모바일 네비 그룹 -->
+                    <div id="mobile-group">
+                        <div class="icon-gr">
+                            <div class="login-icon">
+                                <a href="login.html">
+                                    <img src="./images/login-icon2.png" alt="my page icon">
+                                </a>
+                            </div>
+                            <div class="cart-icon">
+                                <a href="#">
+                                    <img src="./images/basket-icon.png" alt="cart icon">
+                                </a>
+                            </div>
+                            <div class="search-icon">
+                                <a href="product.html">
+                                    <img src="./images/search-white.png">
+                                </a>
+                            </div>
+                            <button class="fa fa-bars m-open"></button>
+                        </div>
+                        <nav id="mobile-nav">
+                            <div class="mobile-content">
+                                <div class="mobile-body">
+                                    <button class="m-close">
+                                        <img src="./images/x-icon.png">
+                                    </button>
+                                    <div class="m-menu">
+                                        <div class="m-menu-gr">
+                                            <a href="#">SHOP<span class="fa fa-angle-right arrow"></span></a>
+                                            <div class="m-drop-down">
+                                                <a href="lip.html">LIP</a>
+                                                <a href="eye.html">EYE</a>
+                                                <a href="face.html">FACE</a>
+                                                <a href="body.html">BODY</a>
+                                            </div>
+                                        </div>
+                                        <div class="m-menu-gr">
+                                            <a href="#">GRASSY!<span class="fa fa-angle-right arrow"></span></a>
+                                            <div class="m-drop-down">
+                                                <a href="#">ABOUT</a>
+                                                <a href="#">STORE</a>
+                                                <a href="#">GOODS</a>
+                                            </div>
+                                        </div>
+                                        <div class="m-menu-gr">
+                                            <a href="#">MEMBERSHIP<span class="fa fa-angle-right arrow"></span></a>
+                                            <div class="m-drop-down">
+                                                <a href="#">EVENT</a>
+                                                <a href="#">MEMBERSHIP</a>
+                                            </div>
+                                        </div>
+                                        <div class="m-menu-gr">
+                                            <a href="#">COMMUNITY<span class="fa fa-angle-right arrow"></span></a>
+                                            <div class="m-drop-down">
+                                                <a href="#">NOTICE</a>
+                                                <a href="#">Q&A</a>
+                                                <a href="#">FAQ</a>
+                                            </div>
+                                        </div>
+                                        <div class="m-menu-gr">
+                                            <a href="#">DAY ROUTINE<span class="fa fa-angle-right arrow"></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="m-login-gr">
+                                        <a href="login.html">LOG IN</a>
+                                        <!-- <a href="#">SIGN IN</a> -->
+                                    </div>
+                                    <div class="m-search">
+                                        <img src="./images/search.png">
+                                       <input type="text" name="search-box" placeholder="search" class="array">
+                                    </div>
+                                  
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    
+
+                </div>
+            </header>
+        </div>
+            
+            <section>
+                <div id="body-container">
+                    <div class="main-content-wrap">
+                        <picture>
+                            <source media="(min-width:1000px)" srcset="./images/desktop-banner-1.jpg">
+                            <source media="(min-width:744px)" srcset="./images/tablet-banner-1.jpg">
+                            <img src="./images/mobile-banner-1.png" alt="모바일 배너1">
+                        </picture>
+                        
+                        
+                    </div>
+                    <div class="coupon-sec">
+                        <h2>10% COUPON FOR MEMBER</h2>
+                    </div>
+                    <div class="main-content">
+                        <div class="title-wrap">
+                            <h2>Melaleuca Alternifolia Leaf Oil</h2>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="best-seller">
+                    <h2>BEST ITEM</h2>
+                    <div class="tab">
+                        <div class="m-tab">
+                            <a href="#lip">LIP</a>
+                            <a href="#eye">EYE</a>
+                            <a href="#face">FACE</a>
+                            <a href="#body">BODY</a>
+                        </div>
+                        <div class="best-group">
+                            <div class="swiper best-item" id="lip">
+                                <div class="swiper-wrapper">
+                                   <div class="swiper-slide">
+                                        <picture>
+                                            <source media="(min-width:744px)" srcset="./images/tablet-lipbalm.jpg">
+                                            <img src="./images/mobile-lipbalm.jpg">
+                                        </picture>
+                                        <div class="rank">
+                                            <img src="./images/rank1.png">
+                                        </div>
+                                        <div class="wish">
+                                            <button class="wishlist">
+                                                <img src="./images/heart-1.png">
+                                            </button>
+                                            <button class="plus">
+                                                <img src="./images/plus-icon.png">
+                                            </button>
+                                        </div>
+                                        <div class="best-name">
+                                            <h2>Jelly On<br>
+                                                Your Lip Balm
+                                            </h2>
+                                            <p>18,000</p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <picture>
+                                            <source media="(min-width:744px)" srcset="./images/tablet-lip-2.jpg">
+                                            <img src="./images/mobile-lip-2.jpg">
+                                        </picture>
+                                        <div class="rank">
+                                            <img src="./images/rank2.png">
+                                        </div>
+                                        <div class="wish">
+                                            <button class="wishlist">
+                                                <img src="./images/heart-1.png">
+                                            </button>
+                                            <button class="plus">
+                                                <img src="./images/plus-icon.png">
+                                            </button>
+                                        </div>
+                                        <div class="best-name">
+                                            <h2>Grassy<br>
+                                                Velvet Lip Stick
+                                            </h2>
+                                            <p>18,000</p>
+                                        </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                        <picture>
+                                            <source media="(min-width:744px)" srcset="./images/tablet-lip-3.jpg">
+                                            <img src="./images/mobile-lip-3.jpg">
+                                        </picture>
+                                        <div class="rank">
+                                            <img src="./images/rank3.png">
+                                        </div>
+                                        <div class="wish">
+                                            <button class="wishlist">
+                                                <img src="./images/heart-1.png">
+                                            </button>
+                                            <button class="plus">
+                                                <img src="./images/plus-icon.png">
+                                            </button>
+                                        </div>
+                                        <div class="best-name">
+                                            <h2>Rollin On<br>
+                                                Your Lip Stick
+                                            </h2>
+                                            <p>18,000</p>
+                                        </div>
+                                   </div>
+                                   
+                                </div>
+                            </div>
+                            <div class="swiper best-item" id="eye">
+                                <div class="swiper-wrapper">
+                                   <div class="swiper-slide">
+                                    <picture>
+                                        <source media="(min-width:744px)" srcset="./images/tablet-shadow.jpg">
+                                        <img src="./images/m-sh-1.jpg">
+                                    </picture>
+                                    <div class="rank">
+                                        <img src="./images/rank1.png">
+                                    </div>
+                                    <div class="wish">
+                                        <button class="wishlist">
+                                            <img src="./images/heart-1.png">
+                                        </button>
+                                        <button class="plus">
+                                            <img src="./images/plus-icon.png">
+                                        </button>
+                                    </div>
+                                    <div class="best-name">
+                                        <h2>Sand Wave<br>
+                                            Palette
+                                        </h2>
+                                        <p>32,000</p>
+                                    </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                    <picture>
+                                        <source media="(min-width:744px)" srcset="./images/t-eye-2.jpg">
+                                        <img src="./images/m-eye-2.jpg">
+                                    </picture>
+                                    <div class="rank">
+                                        <img src="./images/rank2.png">
+                                    </div>
+                                    <div class="wish">
+                                        <button class="wishlist">
+                                            <img src="./images/heart-1.png">
+                                        </button>
+                                        <button class="plus">
+                                            <img src="./images/plus-icon.png">
+                                        </button>
+                                    </div>
+                                    <div class="best-name">
+                                        <h2>Weekend<br>
+                                            Mini Shadow
+                                        </h2>
+                                        <p>23,000</p>
+                                    </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                    <picture>
+                                        <source media="(min-width:744px)" srcset="./images/t-eye-4.jpg">
+                                        <img src="./images/m-eye-4.jpg">
+                                    </picture>
+                                    <div class="rank">
+                                        <img src="./images/rank3.png">
+                                    </div>
+                                    <div class="wish">
+                                        <button class="wishlist">
+                                            <img src="./images/heart-1.png">
+                                        </button>
+                                        <button class="plus">
+                                            <img src="./images/plus-icon.png">
+                                        </button>
+                                    </div>
+                                    <div class="best-name">
+                                        <h2>Ice Cream<br>
+                                            Eye Powder
+                                        </h2>
+                                        <p>27,000</p>
+                                    </div>
+                                   </div>
+                                   
+                                </div>
+                            </div>
+                            <div class="swiper best-item" id="face">
+                                <div class="swiper-wrapper">
+                                   <div class="swiper-slide">
+                                    <picture>
+                                        <source media="(min-width:744px)" srcset="./images/tablet-blush.jpg">
+                                        <img src="./images/m-blush-1.jpg">
+                                    </picture>
+                                    <div class="rank">
+                                        <img src="./images/rank1.png">
+                                    </div>
+                                    <div class="wish">
+                                        <button class="wishlist">
+                                            <img src="./images/heart-1.png">
+                                        </button>
+                                        <button class="plus">
+                                            <img src="./images/plus-icon.png">
+                                        </button>
+                                    </div>
+                                    <div class="best-name">
+                                        <h2>Super Shy<br>
+                                            Blush
+                                        </h2>
+                                        <p>18,000</p>
+                                    </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                    <picture>
+                                        <source media="(min-width:744px)" srcset="./images/t-face2.jpg">
+                                        <img src="./images/m-face2.jpg">
+                                    </picture>
+                                    <div class="rank">
+                                        <img src="./images/rank2.png">
+                                    </div>
+                                    <div class="wish">
+                                        <button class="wishlist">
+                                            <img src="./images/heart-1.png">
+                                        </button>
+                                        <button class="plus">
+                                            <img src="./images/plus-icon.png">
+                                        </button>
+                                    </div>
+                                    <div class="best-name">
+                                        <h2>Hanrasan<br>
+                                            Toner
+                                        </h2>
+                                        <p>19,000</p>
+                                    </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                    <picture>
+                                        <source media="(min-width:744px)" srcset="./images/t-face3.jpg">
+                                        <img src="./images/m-face3.jpg">
+                                    </picture>
+                                    <div class="rank">
+                                        <img src="./images/rank3.png">
+                                    </div>
+                                    <div class="wish">
+                                        <button class="wishlist">
+                                            <img src="./images/heart-1.png">
+                                        </button>
+                                        <button class="plus">
+                                            <img src="./images/plus-icon.png">
+                                        </button>
+                                    </div>
+                                    <div class="best-name">
+                                        <h2>Himalaya<br>
+                                            Soothing Cream
+                                        </h2>
+                                        <p>20,000</p>
+                                    </div>
+                                   </div>
+                                   
+                                </div>
+                            </div>
+                            <div class="swiper best-item" id="body">
+                                <div class="swiper-wrapper">
+                                   <div class="swiper-slide">
+                                    <picture>
+                                        <source media="(min-width:744px)" srcset="./images/t-body-1.jpg">
+                                        <img src="./images/m-body-1.jpg">
+                                    </picture>
+                                    <div class="rank">
+                                        <img src="./images/rank1.png">
+                                    </div>
+                                    <div class="wish">
+                                        <button class="wishlist">
+                                            <img src="./images/heart-1.png">
+                                        </button>
+                                        <button class="plus">
+                                            <img src="./images/plus-icon.png">
+                                        </button>
+                                    </div>
+                                    <div class="best-name">
+                                        <h2>Baby Skin<br>
+                                            Lotion
+                                        </h2>
+                                        <p>25,000</p>
+                                    </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                    <picture>
+                                        <source media="(min-width:744px)" srcset="./images/t-body-2.jpg">
+                                        <img src="./images/m-body-2.jpg">
+                                    </picture>
+                                    <div class="rank">
+                                        <img src="./images/rank2.png">
+                                    </div>
+                                    <div class="wish">
+                                        <button class="wishlist">
+                                            <img src="./images/heart-1.png">
+                                        </button>
+                                        <button class="plus">
+                                            <img src="./images/plus-icon.png">
+                                        </button>
+                                    </div>
+                                    <div class="best-name">
+                                        <h2>Greenery<br>
+                                            Soap
+                                        </h2>
+                                        <p>10,000</p>
+                                    </div>
+                                   </div>
+                                   <div class="swiper-slide">
+                                    <picture>
+                                        <source media="(min-width:744px)" srcset="./images/t-body-3.jpg">
+                                        <img src="./images/m-body-3.jpg">
+                                    </picture>
+                                    <div class="rank">
+                                        <img src="./images/rank3.png">
+                                    </div>
+                                    <div class="wish">
+                                        <button class="wishlist">
+                                            <img src="./images/heart-1.png">
+                                        </button>
+                                        <button class="plus">
+                                            <img src="./images/plus-icon.png">
+                                        </button>
+                                    </div>
+                                    <div class="best-name">
+                                        <h2>Grassy On<br>
+                                            My Hand
+                                        </h2>
+                                        <p>16,000</p>
+                                    </div>
+                                   </div>
+                                   
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <div class="d-tab">
+                            <a href="#d-lip">LIP</a>
+                            <a href="#d-eye">EYE</a>
+                            <a href="#d-face">FACE</a>
+                            <a href="#d-body">BODY</a>
+                        </div>
+                        <div class="d-best-group">
+                            <div class="d-best-item" id="d-lip">
+                                <div class="d-item-pic">
+                                    <a href="#">
+                                        <img src="./images/desktop-lipbalm1.jpg">
+                                    </a>
+                                    <a href="#">
+                                        <img src="./images/desktop-lip-2.jpg">
+                                    </a>
+                                   <a href>
+                                    <img src="./images/desktop-lip-3.jpg">
+                                   </a>          
+                                </div>
+                               <div class="d-best-name">
+                                    <div class="best-name">
+                                        <h2>Jelly On</h2>
+                                        <h2>Your Lip Balm</h2>
+                                        </h2>
+                                        <p>18,000</p>
+                                    </div>
+                                    <div class="best-name">
+                                        <h2>Grassy</h2>
+                                        <h2>Velvet Lip Stick</h2>
+                                        <p>18,000</p>
+                                    </div>
+                                    <div class="best-name">
+                                        <h2>Rollin On</h2>
+                                        <h2>Your Lip Stick</h2>
+                                        <p>18,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-best-item" id="d-eye">
+                                <div class="d-item-pic">
+                                    <a href="#">
+                                        <img src="./images/d-sh-1.jpg">
+                                    </a>
+                                    <a href="#">
+                                        <img src="./images/d-eye-2.jpg">
+                                    </a>
+                                   <a href>
+                                    <img src="./images/d-eye-3.jpg">
+                                   </a>          
+                                </div>
+                               <div class="d-best-name">
+                                    <div class="best-name">
+                                        <h2>Sand Wave</h2>
+                                        <h2>Palette</h2>
+                                        
+                                        <p>32,000</p>
+                                    </div>
+                                    <div class="best-name">
+                                        <h2>Weekend<br>
+                                            Mini Shadow
+                                        </h2>
+                                        <p>23,000</p>
+                                    </div>
+                                    <div class="best-name">
+                                        <h2>Ice Cream<br>
+                                            Eye Powder
+                                        </h2>
+                                        <p>27,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-best-item" id="d-face">
+                                <div class="d-item-pic">
+                                    <a href="#">
+                                        <img src="./images/d-face-1.jpg">
+                                    </a>
+                                    <a href="#">
+                                        <img src="./images/d-face-2.jpg">
+                                    </a>
+                                   <a href>
+                                    <img src="./images/d-face-3.jpg">
+                                   </a>          
+                                </div>
+                               <div class="d-best-name">
+                                    <div class="best-name">
+                                        <h2>Super Shy<br>
+                                            Blush
+                                        </h2>
+                                        <p>18,000</p>
+                                    </div>
+                                    <div class="best-name">
+                                        <h2>Hanrasan<br>
+                                            Toner
+                                        </h2>
+                                        <p>19,000</p>
+                                    </div>
+                                    <div class="best-name">
+                                        <h2>Himalaya<br>
+                                            Soothing Cream
+                                        </h2>
+                                        <p>20,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-best-item" id="d-body">
+                                <div class="d-item-pic">
+                                    <a href="#">
+                                        <img src="./images/d-body-1.jpg">
+                                    </a>
+                                    <a href="#">
+                                        <img src="./images/d-body-2.jpg">
+                                    </a>
+                                   <a href>
+                                    <img src="./images/d-body-3.jpg">
+                                   </a>          
+                                </div>
+                               <div class="d-best-name">
+                                    <div class="best-name">
+                                        <h2>Baby Skin<br>
+                                            Lotion
+                                        </h2>
+                                        <p>25,000</p>
+                                    </div>
+                                    <div class="best-name">
+                                        <h2>Greenery<br>
+                                            Soap
+                                        </h2>
+                                        <p>10,000</p>
+                                    </div>
+                                    <div class="best-name">
+                                        <h2>Grassy On<br>
+                                            My Hand
+                                        </h2>
+                                        <p>16,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                        </div>
+
+                        
+                    </div>
+                    
+                    <div class="view-more">
+                        <a href="#">VIEW MORE !<span class="fa fa-angle-down down"></span></a>
+                    </div>
+
+                </div>
+                <div class="m-brand-banner">
+                    <picture>
+                        <source media="(min-width:1000px)" srcset="./images/d-brand-banner2.png">
+                        <source media="(min-width:744px)" srcset="./images/t-brand-banner.png">
+                        <img src="./images/m-brand-banner.png">
+                    </picture>
+                </div>
+                <div class="m-n-banner">
+                    <picture>
+                        <source media="(min-width:1000px)" srcset="./images/d-n-b-2.jpg">
+                        <source media="(min-width:744px)" srcset="./images/t-n-b.jpg">
+                        <img src="./images/m-n-b.png">
+                    </picture>
+                   
+                </div>
+                <div class="new-in">
+                    <h2>NEW IN</h2>
+                    <div class="new-item">
+                        <div class="shopping-box">
+                            <img src="./images/shopping.png">
+                        </div>
+                        <div class="new-sh">
+                            <h3>#GLITTER #SUMMER COOL</h3>
+                            
+                            <h2>#GLITTER
+                                #FOR SUMMER COOL
+                                #5 COLORS
+                            </h2>
+                            <a href="#">
+                                <img src="./images/mobile-best-sh-1.jpg">
+                            </a>
+                            <div class="glitter">
+                                <img src="./images/sh-tex.png">
+                            </div>
+                            <h4>MOOD SHADOW</h4>
+                            <h5>18,000</h5>
+                           
+                        </div>
+                        <div class="new-lip">
+                            <h3>#MATT #AUTUMN WARM</h3>
+                            <h2>#MATT
+                                #FOR AUTUMN WARM
+                                #8 COLORS
+                            </h2>
+                            <a href="#">
+                                <img src="./images/mobile-best-lip-1.jpg">
+                            </a>
+                            <div class="lip-tex">
+                                <img src="./images/lip-tex.png">
+                            </div>
+                            <h4>AUTUMN ON LIP</h4>
+                            <h5>12,000</h5>
+                            
+                        </div>
+                    </div>
+                   
+                </div>
+               
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="review-box">
+                                    <h3>Aromatica<br>
+                                        Ampoul
+                                    </h3>
+                                    <div class="review-text">
+                                        <h4>★★★★★</h4>
+                                        <p>너무 좋아요!<p>
+                                        <p>보습력은 물론이고,</p>
+                                        <p>향도 꽃집 향기라</p>
+                                        <p>손이 자주 가요 !!</p>
+                                    </div>
+                                </div>
+                                <div class="review-pic">
+                                    <img src="./images/m-review-1.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="review-box2">
+                                    <h3>XOXO<br>
+                                        Retro Palette
+                                    </h3>
+                                    <div class="review-text">
+                                        <h4>★★★★★</h4>
+                                        <p>쉬어 팔레트 중 최고ㅠㅠ</p>
+                                        <p>뮤트한 컬러들이라</p>
+                                        <p>요즘 애용 중이에요 .. ♡</p>
+                                    </div>
+                                </div>
+                                <div class="review-pic">
+                                    <img src="./images/m-review-2.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <div class="review-box3">
+                                    <h3>Blurry<br>
+                                        Foundation
+                                    </h3>
+                                    <div class="review-text">
+                                        <h4>★★★★★</h4>
+                                    <p>모공이 삭제됐어요..</p>
+                                    <p>유명해지지마..</p> 
+                                    <p>아니 유명해져..</p>
+                                    </div>
+                                </div>
+                                <div class="review-pic">
+                                    <img src="./images/m-review-3.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="insta-sec">
+                    <h2>INSTAGRAM</h2>
+                    <p>@_grassy_</p>
+                    <div class="insta-pic">
+                        <div>
+                            <a href="#">
+                                <img src="./images/insta1.jpg">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="./images/insta2.jpg">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="./images/insta3.jpg">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="./images/insta4.jpg">
+                            </a>
+                        </div>
+                        <div class="desk-insta">
+                            <img src="./images/insta5.jpg">
+                        </div>
+                        <div class="desk-insta">
+                            <img src="./images/insta6.jpg">
+                        </div>
+                        <div class="desk-insta">
+                            <img src="./images/insta7.jpg">
+                        </div>
+                        <div class="desk-insta">
+                            <img src="./images/insta8.jpg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+               <div class="footer">
+                    <div class="jandi">
+                        <div class="footer-logo">
+                            <img src="./images/logo-1.png">
+                        </div>
+                        <h5>Copyright © 주식회사 그래시.<br>
+                            All rights reserved.
+                        </h5>
+                        <h6>Customer Center</h6>
+                        <p>070-0000-0000</p>
+                        <p>yourgrassy@gmail.com</p>
+                        <p>MON - FRI : 9am - 6pm</p>
+                        <h6>Company Info</h6>
+                        <p>상호명 : 주식회사 그래시</p>
+                        <p>대표 : 아무개</p>
+                        <p>주소 : 경기도 의정부시 어쩌구, 그래시</p>
+                        <p>사업자 등록번호 : 000-00-0000</p>
+                        <p>통신판매신고번호 : 2023-경기의정부-0000</p>
+                        <div class="jandi-pic">
+                            sakhdkadsk
+                        </div>
+                    </div>
+               </div>
+            </footer>
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+             <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true,
+                    centeredSlides: true,
+                
+                    pagination: {
+                        el: ".swiper-pagination",
+                    },
+                   
+                });
+            </script>
+             <script>
+                var swiper = new Swiper(".best-item", {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true,
+                    centeredSlides: true,
+                   
+                    pagination: {
+                        el: ".swiper-pagination",
+                    },
+                   
+                });
+            </script>
+            <script src="./js/jquery.marquee.min.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                  $('.coupon-sec h2').marquee({
+                    speed: 0, // 속도
+                    gap: 100, // 간격
+                    delayBeforeStart: 0, // 시작 delay값
+                    direction: 'left', // 방향
+                    duplicated: true, // 선택 영역 복제
+                    pauseOnHover: true // hover시 일시중지 여부
+                  });
+              });
+            </script>
+             <div class="question">
+                <a href="#">
+                    <img src="./images/question-mark.png">
+                </a>
+            </div>
+            
+            <div class="footer-menu active">
+               <div class="f-m-g">
+                <div class="footer-icon">
+                    <a href="#">
+                        <img src="./images/home-icon.png">
+                    </a>
+                    <p>home</p>
+                </div>
+                <div class="footer-icon">
+                    <a href="#">
+                        <img src="./images/menu-icon.png">
+                    </a>
+                    <p>menu</p>
+                </div>
+                <div class="footer-icon">
+                    <a href="#">
+                        <img src="./images/star-icon.png">
+                    </a>
+                    <p>Grassy</p>
+                </div>
+                <div class="footer-icon">
+                    <a href="#">
+                        <img src="./images/like-icon.png">
+                    </a>
+                    <p>wish</p>
+                </div>
+                <div class="footer-icon">
+                    <a href="#">
+                        <img src="./images/person-icon.png">
+                    </a>
+                    <p>my</p>
+                </div>
+               </div>
+            </div>
+            
+        </main>
+    </body>
+
+</html>

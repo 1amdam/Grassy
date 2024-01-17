@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keyword" content="">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta property="og:type" content="html">
+        <meta property="og:title" content="Grassy">
+        <meta property="og:description" content="자연의 향 그대로, Grassy">
+        <meta property="og:image" content="./images/miribogi.png">
+        <meta property="og:url" content="http://damhye11.dothome.co.kr/Grassy/">
+        <title>Grassy</title>
+        <link rel="shortcut icon" href="./images/fav.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./css/common.css">
+        <link rel="stylesheet" href="./css/member.css">
+        <script src="./js/jquery-3.7.1.min.js"></script>
+        <script src="./js/common.js"></script>
+        <script src="./js/login.js"></script>
+
+        <style>
+         
+        </style>
+    </head>
+   
+
+    <body>
+        <main>
+        <div class="header-position">
+            <header>
+                <div id="header-container">
+                    <h1>
+                        <a href="index.html">
+                            <img src="./images/logo-1.png" alt="Grassy Logo">
+                        </a>
+                    </h1>
+                    <div class="full-back"></div>
+                    <nav id="desk-nav">
+                        <div class="d-menu">
+                            <a href="shop.html">SHOP</a>
+                            <div class="drop-down">
+                                <a href="lip.html">LIP</a>
+                                <a href="eye.html">EYE</a>
+                                <a href="face.html">FACE</a>
+                                <a href="body.html">BODY</a>
+                            </div>
+                            
+                        </div>
+                        <div class="d-menu">
+                            <a href="#">GRASSY!</a>
+                            <div class="drop-down">
+                                <a href="#">ABOUT</a>
+                                <a href="#">STORE</a>
+                                <a href="#">GOODS</a>
+                            </div>
+                            
+                        </div>
+                        <div class="d-menu">
+                            <a href="#">MEMBERSHIP</a>
+                            <div class="drop-down">
+                                <a href="#">EVENT</a>
+                                <a href="#">MEMBERSHIP</a>
+                            </div>
+                            
+                        </div>
+                        <div class="d-menu">
+                            <a href="#">COMMUNITY</a>
+                            <div class="drop-down">
+                                <a href="#">NOTICE</a>
+                                <a href="#">Q&A</a>
+                                <a href="#">FAQ</a>
+                            </div>
+                            
+                        </div>
+                        <div class="d-menu">
+                            <a href="#">DAY ROUTINE</a>
+                        </div>
+                        
+                    </nav>
+                    <!-- <div id="login-gr">
+                        <a href="#">
+                            <img src="./images/login-icon.png">
+                        </a>
+                        <a href="#">
+                            <img src="./images/basket-icon.png">
+                        </a>
+                    </div> -->
+                    <!-- 로그인, 카트, 모바일 네비 그룹 -->
+                    <div id="mobile-group">
+                        <div class="icon-gr">
+                            <div class="login-icon">
+                                <a href="login.html">
+                                    <img src="./images/login-icon2.png" alt="my page icon">
+                                </a>
+                            </div>
+                            <div class="cart-icon">
+                                <a href="#">
+                                    <img src="./images/basket-icon.png" alt="cart icon">
+                                </a>
+                            </div>
+                            <div class="search-icon">
+                                <a href="product.html">
+                                    <img src="./images/search-white.png">
+                                </a>
+                            </div>
+                            <button class="fa fa-bars m-open"></button>
+                        </div>
+                        <nav id="mobile-nav">
+                            <div class="mobile-content">
+                                <div class="mobile-body">
+                                    <button class="m-close">
+                                        <img src="./images/x-icon.png">
+                                    </button>
+                                    <div class="m-menu">
+                                        <div class="m-menu-gr">
+                                            <a href="#">SHOP<span class="fa fa-angle-right arrow"></span></a>
+                                            <div class="m-drop-down">
+                                                <a href="#">LIP</a>
+                                                <a href="#">EYE</a>
+                                                <a href="#">FACE</a>
+                                                <a href="#">BODY</a>
+                                            </div>
+                                        </div>
+                                        <div class="m-menu-gr">
+                                            <a href="#">GRASSY!<span class="fa fa-angle-right arrow"></span></a>
+                                            <div class="m-drop-down">
+                                                <a href="#">ABOUT</a>
+                                                <a href="#">STORE</a>
+                                                <a href="#">GOODS</a>
+                                            </div>
+                                        </div>
+                                        <div class="m-menu-gr">
+                                            <a href="#">MEMBERSHIP<span class="fa fa-angle-right arrow"></span></a>
+                                            <div class="m-drop-down">
+                                                <a href="#">EVENT</a>
+                                                <a href="#">MEMBERSHIP</a>
+                                            </div>
+                                        </div>
+                                        <div class="m-menu-gr">
+                                            <a href="#">COMMUNITY<span class="fa fa-angle-right arrow"></span></a>
+                                            <div class="m-drop-down">
+                                                <a href="#">NOTICE</a>
+                                                <a href="#">Q&A</a>
+                                                <a href="#">FAQ</a>
+                                            </div>
+                                        </div>
+                                        <div class="m-menu-gr">
+                                            <a href="#">DAY ROUTINE<span class="fa fa-angle-right arrow"></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="m-login-gr">
+                                        <a href="login.html">LOG IN</a>
+                                        <!-- <a href="#">SIGN IN</a> -->
+                                    </div>
+                                    <div class="m-search">
+                                        <img src="./images/search.png">
+                                       <input type="text" name="search-box" placeholder="search" class="array">
+                                    </div>
+                                  
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    
+
+                </div>
+            </header>
+        </div>
+            
+        <section id="body-container">
+            <h2 class="member-title">Join us !</h2>
+            <form action="" class="member-form">
+                <div class="mem-check">
+                    <h3>회원구분<span> *</span></h3>
+                    <input type="radio" name="membership" id="korean" value="korean"><label> 개인회원</label>
+                    <input type="radio" name="membership" id="foreigner" value="foreigner"><label> 국외회원</label>
+                </div>
+                <h2>Info</h2>
+                <div class="id">
+                    <h3>ID<span> *</span></h3>
+                    <input type="text" class="array" name="id-form" minlength="6" maxlength="16" pattern="[^@#%]+">
+                </div>
+                <p>영소문자/숫자, 4~16자</p>
+                <div class="psw">
+                    <h3>PASSWORD<span> *</span></h3>
+                    <input type="password" class="array" name="psw1" minlength="8" maxlength="16" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[^@#%]+">
+                </div>
+                <p>영문 대소문자/숫자/특수문자 2개 이상 조합, 8~16자</p>
+                <div class="psw">
+                    <h3>VERIFY PASSWORD<span> *</span></h3>
+                    <input type="password" class="array" name="psw2" minlength="8" maxlength="16" pattern="(?=.*\d)(?=*[a-z])(?=.*)(?=.*[A-Z])[^@#%]+">
+                </div>
+                <div class="name">
+                    <h3>NAME<span> *</span></h3>
+                    <input type="text" class="array" name="name" minlength="2" maxlength="6" pattern="^[ㄱ-ㅎ가-힣a-zA-Z-\s]">
+                </div>
+                <div class="phone">
+                    <h3>PHONE NUMBER<span> *</span></h3>
+                    <select class="num-select">
+                        <option value="010">010</option>
+                        <option value="011">011</option>
+                        <option value="016">016</option>
+                        <option value="017">017</option>
+                        <option value="018">018</option>
+                        <option value="019">019</option>
+                    </select>
+                    <input type="text" class="array" name="num2" pattern="[0-9]{3,4}">
+                    <input type="text" class="array" name="num3" pattern="[0-9]{4,4}">
+                </div>
+                <div class="address">
+                    <h3>ADDRESS<span> *</span></h3>
+                    <input type="text" class="array" name="post" maxlength="16" placeholder="우편번호" pattern="[0-9]{3,4}">
+                    <button id="postBtn" class="btnBasic" type="button" style="cursor: pointer;">search</button>
+                    <input type="text" class="array" name="address" placeholder="주소" pattern="^[ㄱ-ㅎ가-힣a-zA-Z-\s]">
+                    <input type="text" class="array" name="address" placeholder="상세주소" pattern="^[ㄱ-ㅎ가-힣a-zA-Z-\s]">
+                </div>
+                <div class="email">
+                    <h3>E-MAIL</h3>
+                    <input type="text" class="array" name="e-id">
+                    <span>@</span>
+                    <input type="text" name="e-add" class="array" placeholder="직접입력">
+                    <select class="e-select">
+                        <option value="" selected>--SELECT--</option>
+                        <option value="naver.com">Naver</option>
+                        <option value="daum.net">Daum</option>
+                        <option value="gmail.com">G-mail</option>
+                        <option value="nate.com">Nate</option>
+                    </select>
+                </div>
+                <h2>More Info</h2>
+                <div class="gender">
+                    <h3>GENDER</h3>
+                    <input type="radio" name="gender" id="female" value="female"><label> 여성</label>
+                    <input type="radio" name="gender" id="male" value="male"><label> 남성</label>
+                    <input type="radio" name="gender" id="non" value="non"><label> 선택없음</label>
+                </div>
+                <div class="b-day">
+                    <h3>BIRTH</h3>
+                    <input type="text" class="array" name="address" maxlength="4" placeholder="Year" pattern="[0-9]{3,4}">/
+                    <input type="text" class="array" name="address" maxlength="4" placeholder="Month" pattern="[0-9]{3,4}">/
+                    <input type="text" class="array" name="address" maxlength="4" placeholder="Day" pattern="[0-9]{3,4}">
+                </div>
+                <h2>Terms Conditions</h2>
+                <div class="agree">
+                    <h3 class="check">
+                        <input type="checkbox" name="total" id="chk-total">
+                        <label for="chk-total">이용약관 및 개인정보수집 및 이용, 쇼핑정보 수신(선택)에 모두 동의합니다.</label> 
+                    </h3>
+                    <h4>[필수] 이용약관 동의</h4>
+                    <p class="chk-ele">
+                        이용약관에 동의하십니까? 
+                        <input type="checkbox" name="chk1" id="chk1">
+                        <label for="chk1"></label> 동의함
+                    </p>
+                    <h4>[필수] 개인정보 수집 및 이용 동의</h4>
+                    <p class="chk-ele">
+                        개인정보 수집 및 이용에 동의하십니까?
+                        <input type="checkbox" name="chk2" id="chk2">
+                        <label for="chk1"></label> 동의함
+                    </p>
+                    <h4>[선택] 쇼핑정보 수신 동의</h4>
+                    <p class="chk-ele">
+                        SMS 수신을 동의하십니까?
+                        <input type="checkbox" name="chk3" id="chk3">
+                        <label for="chk1"></label> 동의함
+                    </p>
+                    <p class="chk-ele">
+                        수신을 동의하십니까?
+                        <input type="checkbox" name="chk4" id="chk4">
+                        <label for="chk1"></label> 동의함
+                    </p> 
+                </div>
+                <div class="member-submit">
+                    <input type="submit" name="member-submit" value="SUBMIT">
+                </div>
+
+            </form>
+        </section>
+        <footer>
+            <div class="footer">
+                <div class="jandi">
+                    <div class="footer-logo">
+                        <img src="./images/logo-1.png">
+                    </div>
+                    <h5>Copyright &copy; 주식회사 그래시.<br>
+                        All rights reserved.
+                    </h5>
+                    <h6>Customer Center</h6>
+                    <p>070-0000-0000</p>
+                    <p>yourgrassy@gmail.com</p>
+                    <p>MON - FRI : 9am - 6pm</p>
+                    <h6>Company Info</h6>
+                    <p>상호명 : 주식회사 그래시</p>
+                    <p>대표 : 아무개</p>
+                    <p>주소 : 경기도 의정부시 어쩌구, 그래시</p>
+                    <p>사업자 등록번호 : 000-00-0000</p>
+                    <p>통신판매신고번호 : 2023-경기의정부-0000</p>
+                    <div class="jandi-pic">
+                        sakhdkadsk
+                    </div>
+               </div>
+            </footer>
+         
+        </main>
+    </body>
+
+</html>
